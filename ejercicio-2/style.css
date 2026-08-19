@@ -1,0 +1,96 @@
+/* Todas las etiquetas */
+* {
+    /* Márgenes */
+    margin: 0;
+
+    /* Relleno (margen interno) */
+    padding: 0;
+
+    /* Tamaño de las cajas */
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    background: url(Assets/Pink_Floyd-members.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+/* Contenedor principal */
+main {
+    background: rgba(0, 0, 0, 0.8);
+
+    width: 100%;
+    max-width: 650px;
+
+    /* Centrar */
+    margin: 0 auto;
+
+    /* Espacio interno */
+    padding: 20px;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos títulos */
+h1 {
+    /* Color de fuente */
+    color: rgb(118, 146, 255);
+
+    /* Tamaño de fuente */
+    font-size: 50px;
+
+    /* Familia tipográfica */
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: center;
+}
+
+h2 {
+    /* Color de fuente */
+    color: rgb(195, 170, 215);
+
+    /* Tamaño de fuente */
+    font-size: 25px;
+
+    /* Familia tipográfica */
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Márgenes: top right bottom left */
+    margin: 10px 0 10px 0;
+}
+
+/* Estilo de párrafos */
+.parrafo-pink {
+    /* Color de la fuente */
+    color: rgb(255, 255, 255);
+
+    /* Tamaño de fuente */
+    font-size: 14px;
+
+    /* Altura de línea */
+    line-height: 24px;
+
+    /* Justificar el texto */
+    text-align: justify;
+
+    /* Fuente */
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Columnas */
+    columns: 2;
+
+    /* Márgenes */
+    margin: 10px 0 10px 0;
+}

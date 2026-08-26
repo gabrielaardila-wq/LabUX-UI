@@ -1,0 +1,119 @@
+/* INDICE DE ESTILOS
+
+0. Generales / colores
+1. Tipografías
+2. Header / Cabecera
+3. Enlaces / Botones
+4. Areas destacadas
+
+*/
+
+/* 0. Generales / colores */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-principal: #4b5694;
+    --color-acento: #eae0cf;
+    --color-tercer: #4e1f6e;
+    --color-texto: #1a1f2a;
+}
+
+/* 1. Tipografías */
+.titulo-principal{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 30px;
+}
+
+.titulo-secundario{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 22px;
+}
+
+.parrafo{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-texto);
+    font-size: 18px
+}
+
+.texto-oculto{
+    display: none;
+}
+
+/* 2. Header / Cabecera */
+#cabecera-principal{
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /*border: grosor tipo color */
+    border-bottom: 3px solid var(--color-principal)
+}
+
+/* 3. Enlaces / Botones */
+.boton-principal{
+    /* fuente */
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 18px;
+    /* quito la linea inferior */
+    text-decoration: none;
+    /* asigno cuerpo por medio del relleno */
+    padding: 8px 15px;
+    /* animo el paso del mouse */
+    transition: all linear 0.3s;
+    /* Redondear bordes */
+    border-radius: 3px;
+}
+.boton-principal:hover{
+    color: white;
+    background-color: var(--color-principal);
+}
+
+/*4. Area destacadas */
+#area-destacadas div{
+   display: flex;
+}
+
+
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    /* 2. Header / Cabecera */
+    #cabecera-principal{
+        flex-direction: column;
+    }
+    /*3. Enlaces / Botones */
+    nav[role=navigation]{
+        width: 98%;
+    }
+    .boton-principal{
+        /* se comporte como un bloque */
+        display: block;
+        /* ancho */
+        width: 96%;
+        /* margen */
+        margin: 5px 2% 0 2%;
+        /* alinea al centro */
+        text-align: center;
+        /* borde inferior */
+        border-bottom: 1px solid var(--color-principal);
+        /* quito borde */
+        border-radius: 0;
+    }
+}

@@ -5,7 +5,7 @@
 2. Header / Cabecera
 3. Enlaces / Botones
 4. Areas destacadas
-
+5. Area experiencias (Video)
 */
 
 /* 0. Generales / colores */
@@ -21,13 +21,32 @@
     --color-texto: #1a1f2a;
 }
 
+img{
+    width: 100%;
+}
+
+.elements-row{
+    display: flex;
+    justify-content: space-around;
+}
+
 /* 1. Tipografías */
 .titulo-principal{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: var(--color-principal);
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.titulo-principal2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-acento);
+    font-size: 40px;
+    text-align: center;
 }
 
 .titulo-secundario{
@@ -44,7 +63,7 @@
     font-weight: 400;
     font-style: normal;
     color: var(--color-texto);
-    font-size: 18px
+    font-size: 18px;
 }
 
 .texto-oculto{
@@ -86,14 +105,57 @@
 }
 
 /*4. Area destacadas */
-#area-destacadas div{
-   display: flex;
+#area-destacadas{
+   padding: 100px 0;
+}
+.articulo-index{
+    /*relleno: top right bottom left */
+    padding: 20px;
+}
+.articulo-index *{
+    /* margin */
+    margin: 0 0 10px 0;
+}
+.boton-vermas{
+    /* fuente */
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-tercer);
+    color: white;
+    background-color: var(--color-tercer);
+    font-size: 15px;
+    /* quito la linea inferior */
+    text-decoration: none;
+    /* asigno cuerpo por medio del relleno */
+    padding: 5px 10px;
+    /* animo el paso del mouse */
+    transition: all linear 0.3s;
+    /* Redondear bordes */
+    border-radius: 2px;
 }
 
+.boton-vermas:hover{
+    background-color: var(--color-principal);
+}
 
-
+/* Area experiencias (Video) */
+#area-experiencias{
+    padding: 100px 0;
+    background: url(assets/FONDO-BUENOSAIRES.jpg) center center no-repeat rgba(0,0,0,0);
+    background-size: cover;
+}
+#area-experiencias video{
+    margin: 30px 5%;
+}
 /* Responsive */
 @media only screen and (max-width: 600px) {
+    /* 0. Generales / colores */
+    .elements-row{
+        flex-direction: column;
+        align-items: center;
+    }
     /* 2. Header / Cabecera */
     #cabecera-principal{
         flex-direction: column;

@@ -1,0 +1,457 @@
+/* INDICE DE ESTILOS
+
+0. Generales / colores
+1. Tipografías
+2. Header / Cabecera
+3. Enlaces / Botones
+4. Areas destacadas
+5. Area experiencias (Video)
+6. Area semanales
+7. Mapa
+8. Footer
+*/
+
+
+/* 0. Generales / colores */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-principal: #1b0b33;
+    --color-acento: #768fb2;
+    --color-tercer: #020513;  
+    --color-texto: #22252c;
+}
+
+img{
+    width: 100%;
+}
+
+.elements-row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* 1. Tipografías */
+.titulo-principal{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 40px;
+    text-align: center;
+}
+
+.titulo-secundario{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-tercer);
+    font-size: 31px;
+}
+
+.titulo-secundario2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-acento);
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.parrafo{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-texto);
+    font-size: 20px;
+}
+
+.parrafo2{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-acento);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.texto-oculto{
+    display: none;
+}
+
+
+/* 2. Header / Cabecera */
+#cabecera-principal{
+    margin-top: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* Bordes superior e inferior */
+    border-top: 3px solid var(--color-tercer);    /* linea de arriba */
+    border-bottom: 3px solid var(--color-tercer); /* linea de abajo */
+}
+
+/* 3. Enlaces / Botones */
+.boton-principal{
+    /* fuente */
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 30px;
+    /* quito la linea inferior */
+    text-decoration: none;
+    /* asigno cuerpo por medio del relleno */
+    padding: 8px 15px;
+    /* animo el paso del mouse */
+    transition: all linear 0.3s;
+    /* Redondear bordes */
+    border-radius: 3px;
+}
+.boton-principal:hover{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+
+/*4. Area destacadas */
+#area-destacadas{
+    padding: 40px 40px;
+}
+
+.articulo-index{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 40px auto 20px auto;
+    max-width: 1100px;
+
+    background-color: #ffffff;
+    border-radius: 7px; 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+}
+
+.articulo-index *{
+    margin: 0 0 0 0;
+}
+
+.articulo-index > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.articulo-index img {
+    width: 600px;
+    height: 420px;
+    object-fit: cover; /* Para recortar la foto */
+    border-radius: 4px;
+}
+
+.boton-vermas{
+    /* fuente */
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-tercer);
+    color: white;
+    background-color: var(--color-tercer);
+    font-size: 17px;
+    /* quito la linea inferior */
+    text-decoration: none;
+    /* asigno cuerpo por medio del relleno */
+    padding: 7px 13px;
+    /* animo el paso del mouse */
+    transition: all linear 0.3s;
+    /* Redondear bordes */
+    border-radius: 4px;
+}
+
+.boton-vermas:hover{
+    background-color: var(--color-acento);
+}
+
+/*5. Area experiencias (Video) */
+#area-experiencias{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cuadrado-video {
+    background: var(--color-acento);
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+    padding: 30px;
+    border-radius: 12px; 
+}
+
+.cuadrado-video video {
+    width: 100%;
+    height: auto;
+    display: block; 
+    border-radius: 8px;
+}
+
+/* 6. Area semanales */
+#area-semanales {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contenedor de las tarjetas */
+#area-semanales > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Tarjetas */
+.articulo2-index {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+}
+
+/* Imagen */
+.articulo2-index img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Contenido de la tarjeta */
+.articulo2-index > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    flex-grow: 1;
+}
+
+/* Título de las tarjetas */
+.articulo2-index .titulo-secundario {
+    margin: 0;
+}
+
+.articulo2-index .boton-vermas {
+    margin-top: auto;
+}
+
+.boton-vermas{
+    /* fuente */
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-tercer);
+    color: white;
+    background-color: var(--color-tercer);
+    font-size: 17px;
+    /* quito la linea inferior */
+    text-decoration: none;
+    /* asigno cuerpo por medio del relleno */
+    padding: 7px 13px;
+    /* animo el paso del mouse */
+    transition: all linear 0.3s;
+    /* Redondear bordes */
+    border-radius: 4px;
+}
+
+.boton-vermas:hover{
+    background-color: var(--color-acento);
+}
+
+/* 7. Mapa */
+.map-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    display: block;
+    border: none;
+}
+
+/* 8. Footer */
+footer {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 50px 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Logo */
+.footer-brand {
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.footer-brand img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contenedor de las columnas */
+footer > div:nth-child(2) {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+/* Listas */
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    /* 0. Generales / colores */
+    .elements-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* 2. Header / Cabecera */
+    #cabecera-principal{
+        flex-direction: column;
+    }
+    /*3. Enlaces / Botones */
+    nav[role=navigation]{
+        width: 98%;
+    }
+    .boton-principal{
+        /* se comporte como un bloque */
+        display: block;
+        /* ancho */
+        width: 96%;
+        /* margen */
+        margin: 5px 2% 0 2%;
+        /* alinea al centro */
+        text-align: center;
+        /* borde inferior */
+        border-bottom: 1px solid var(--color-principal);
+        /* quito borde */
+        border-radius: 0;
+    }
+
+    .articulo-index {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .articulo-index img {
+        width: 100%; 
+        height: 250px;
+    }
+
+    .articulo-index > div {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    /* 6. Área semanales */
+    #area-semanales {
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    #area-semanales > div {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .articulo2-index {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .articulo2-index img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .articulo2-index > div {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    /* 8. Footer */
+    footer {
+        padding: 40px 25px;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        width: 100px;
+    }
+
+    footer > div:nth-child(2) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    footer > div:nth-child(2) > div {
+        width: 100%;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer li {
+        margin-bottom: 8px;
+    }
+}

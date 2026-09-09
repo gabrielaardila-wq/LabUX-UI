@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width, initial-scale:1.0">
+        <title>Turismo y convenciones en NYC - Sitio Oficial de Información Turística</title>
+        <meta name="description" content="¿Qué hay de bueno en NYC? Desde cobertura de las últimas atracciones en los cinco distritos hasta ofertas en entradas para espectáculos de Broadway.">
+        <meta name="robots" content="index, follow">
+
+        <!--enlazar el CSS-->
+        <link href="style.css" rel="stylesheet">
+
+        <!--google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Cabecera principal del sitio -->
+        <header id="cabecera-principal">
+            <!-- Logo del sitio 
+            href-> la dirección a donde voy al dar clic  
+            -->
+            <a href="index.html" aria-label="Ir a la página de inicio de Turismo y convenciones en NYC">
+                <img src="assets/Logo-Pagina.jpg" alt="Logotipo oficial de Turismo y convenciones en NYC">
+            </a>
+
+            <!-- Navegador principal -->
+            <nav role="navigation" aria-label="Menu principal">
+                  <a href="" class="boton-principal">Ahora en Nueva York</a>
+                  <a href="" class="boton-principal">Cosas que Hacer</a>
+                  <a href="" class="boton-principal">Comer y beber</a>
+                  <a href="" class="boton-principal">Donde alojarse</a>
+            </nav>
+
+        </header>
+
+
+
+        <!-- Contenido principal del sitio -->
+        <main role="main">
+
+            <h1 class="texto-oculto" aria-hidden="true">Turismo y Convenciones Oficial de Nueva York</h1>
+
+            <!-- Actividades destacadas-->
+            <section id="area-destacadas">
+                <h2 class="titulo-principal">Actividades destacadas en la ciudad</h2>
+                
+                <div class="elements-row">
+
+                    <!-- tarjeta -->
+                    <article role="article" class="articulo-index">
+                        <img src="assets/EstatuaLibertad.jpg" alt="Estatua de la Libertad">
+                        <div>
+                            <h3 class="titulo-secundario">Fundado por NYC</h3>
+                            <p class="parrafo">Aprende sobre el pasado de la ciudad y cómo experimentar hitos en su historia hoy</p>
+                            <a href="" aria-label="Ir al buscador de tours por la Estatua de la Libertad" class="boton-vermas">Ver más</a>
+                        </div>
+                    </article>
+
+                    <!-- tarjeta -->
+                    <article role="article" class="articulo-index">
+                        <img src="assets/EmpireStates.jpg" alt="Edificio Empire State">
+                        <div>
+                            <h3 class="titulo-secundario">Observa Nueva York desde el Empire State</h3>
+                            <p class="parrafo">El en Empire State tendras una vista hermosa de toda la ciudad de Nueva York</p>
+                            <a href="" aria-label="Información para subir al observador del Empire State" class="boton-vermas">Ver más</a>
+                        </div>
+                    </article>
+
+                    <!-- tarjeta -->
+                    <article role="article" class="articulo-index">
+                        <img src="assets/TimesSquare.jpg" alt="Time Square de noche">
+                        <div>
+                            <h3 class="titulo-secundario">Actividades nocturnas</h3>
+                            <p class="parrafo">Vida nocturna, mercados y luces por toda la cuidad de Nueva York</p>
+                            <a href="" aria-label="Ver más información sobre mercados en NYC" class="boton-vermas">Ver más</a>
+                        </div>
+                    </article>
+
+
+                </div>
+
+            </section>
+            <!-- Fin de actividades destacadas-->
+
+            <!-- Contenido Multimedia -->
+            <section id="area-experiencias">
+                <h2 class="titulo-principal">Como es viajar a Nueva York</h2>
+                <div class="cuadrado-video">
+                    <video controls autoplay loop width="1600" height="900" aria-label="Video sobre la ciudad de Buenos Aires">
+                        <source src="assets/NYC video oficial.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <!-- Fin de Contenido Multimedia -->
+
+
+
+            <!-- Contenidos Destacados -->
+            <section id="area-semanales">
+                <h2 class="titulo-principal">Destacados de la Semana</h2>
+
+                <div>
+                    
+                    <!-- Tarjeta Destacada 1 -->
+                    <article role="article" class="articulo2-index">
+                        <img src="assets/CentralPark.jpg" alt="Parque Central Park" width="400" height="250">
+                        <div>
+                        <h3 class="titulo-secundario">Un clásico de Nueva York que nunca pasa de moda. Central Park.</h3>
+                        <a href="" aria-label="Ver más sobre las actividades dentro del Central Park" class="boton-vermas">Ver más</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta Destacada 2 -->
+                    <article role="article" class="articulo2-index">
+                        <img src="assets/MuseoMoma.jpg" alt="Museo Moma de Nueva York" width="400" height="250">
+                        <div>
+                        <h3 class="titulo-secundario">Entrada Gratis a Museos de la ciudad</h3>
+                        <a href="" aria-label="Ver más sobre los circuitos de museos gratuitos" class="boton-vermas">Ver más</a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta Destacada 3 -->
+                    <article role="article" class="articulo2-index">
+                        <img src="assets/BroadwayWeek.jpg" alt="NYC Broadway Week" width="400" height="250">
+                        <div>
+                        <h3 class="titulo-secundario">¡Vive la magia de Broadway con increíbles ofertas 2x1 en tus espectáculos favoritos! Sep8-21</h3>
+                        <a href="" aria-label="Ver más sobre la semana de Broadway" class="boton-vermas">Ver más</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+
+            <!-- Ubicación Geográfica -->
+            <section aria-labelledby="titulo-mapa">
+                <h2 class="titulo-principal">Ubicación y Centros de Atención al Turista</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59234.11756901483!2d-74.0041477570935!3d40.7783224235515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a018531e3%3A0xb9df1f7387a94119!2sCentral%20Park!5e0!3m2!1ses!2sco!4v1787107496280!5m2!1ses!2sco" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa interactivo de la Ciudad de Nueva York con la ubicación del Central Park">
+                    </iframe>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Pie de Página Institucional -->
+    <footer role="contentinfo">
+
+            <!-- Identificador Institucional del Footer -->
+            <div class="footer-brand">
+                <img src="assets/GobiernodeNYC.png" alt="Logotipo oficial del Gobierno de la Ciudad de Nueva York" width="90" height="90">
+            </div>
+
+            <!-- Columnas de Enlaces del Footer -->
+            <div>
+                
+                <!-- Lista 1: Prestadores -->
+                <nav>
+                    <h3 id="footer-prestadores" class="titulo-secundario2">Prestadores</h3>
+                    <ul>
+                        <li><a href="/alquileres-temporales" class="parrafo2">Alquileres Temporales</a></li>
+                        <li><a href="/alojamientos-turisticos" class="parrafo2">Alojamientos turísticos</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Lista 2: Profesionales -->
+                <nav>
+                    <h3 id="footer-profesionales" class="titulo-secundario2">Profesionales</h3>
+                    <ul>
+                        <li><a href="/observatorio-turistico" class="parrafo2">Observatorio turístico</a></li>
+                        <li><a href="/turismo-reuniones" class="parrafo2">Turismo de Reuniones</a></li>
+                        <li><a href="/prensa-contacto" class="parrafo2">Prensa: material y contacto</a></li>
+                        <li><a href="/noticias-ente" class="parrafo2">Noticias del ente de turismo</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Lista 3: Interacción y Contacto -->
+                <nav>
+                    <h3 id="footer-contacto" class="titulo-secundario2">Contacto e Interacción</h3>
+                    <ul>
+                        <li><a href="/contactate-con-nosotros" class="parrafo2">Contactate con nosotros</a></li>
+                        <li><a href="/suscribete-newsletter" aria-label="Ir al formulario para suscribirse al Newsletter oficial" class="parrafo2">Suscríbete al Newsletter</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+    </footer>
+
+    </body>
+
+</html>
